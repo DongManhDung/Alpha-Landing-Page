@@ -3,6 +3,7 @@ import AsSeenInMarquee from "../socialproof/AsSeenInMarquee";
 import TrustBadges from "../trustbadges/TrustBadges";
 import ScrollArrow from "../common/ScrollArrow";
 import Connection from "../benefits/Connection";
+import Comparison from "../comparison/Comparison";
 
 // This is main layout body component
 export default function Body() {
@@ -25,6 +26,9 @@ export default function Body() {
 
       {/* Scroll Arrow Section */}
       <ScrollArrow />
+
+      {/* Comparison Section */}
+      <Comparison />
 
     </>
   );
