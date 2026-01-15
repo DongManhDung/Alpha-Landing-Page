@@ -7,6 +7,7 @@ import Comparison from "../comparison/Comparison";
 import WhyNotThis from "../whynotthis/WhyNotThis";
 import Ingredient from "../ingredient/Ingredient";
 import Features from "../features/Features";
+import DoctorEndorsement from "../doctorendorsement/DoctorEndorsement";
 
 // This is main layout body component
 export default function Body() {
@@ -39,8 +40,13 @@ export default function Body() {
       {/* Ingredient Section */}
       <Ingredient />
 
+
+
       {/* Features Section */}
       <Features />
+
+      {/* Doctor Endorsement Section */}
+      <DoctorEndorsement />
 
     </>
   );
