@@ -5,6 +5,7 @@ import ScrollArrow from "../common/ScrollArrow";
 import Connection from "../benefits/Connection";
 import Comparison from "../comparison/Comparison";
 import WhyNotThis from "../whynotthis/WhyNotThis";
+import Ingredient from "../ingredient/Ingredient";
 
 // This is main layout body component
 export default function Body() {
@@ -33,6 +34,9 @@ export default function Body() {
       
       {/* Why Not This Section */}
       <WhyNotThis />
+
+      {/* Ingredient Section */}
+      <Ingredient />
 
     </>
   );
