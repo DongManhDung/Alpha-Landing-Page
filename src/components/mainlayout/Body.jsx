@@ -4,6 +4,7 @@ import TrustBadges from "../trustbadges/TrustBadges";
 import ScrollArrow from "../common/ScrollArrow";
 import Connection from "../benefits/Connection";
 import Comparison from "../comparison/Comparison";
+import WhyNotThis from "../whynotthis/WhyNotThis";
 
 // This is main layout body component
 export default function Body() {
@@ -29,6 +30,9 @@ export default function Body() {
 
       {/* Comparison Section */}
       <Comparison />
+      
+      {/* Why Not This Section */}
+      <WhyNotThis />
 
     </>
   );
