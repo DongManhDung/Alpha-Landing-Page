@@ -2,6 +2,7 @@ import HeroSection from "../hero/HeroSection";
 import AsSeenInMarquee from "../socialproof/AsSeenInMarquee";
 import TrustBadges from "../trustbadges/TrustBadges";
 import ScrollArrow from "../common/ScrollArrow";
+import Connection from "../benefits/Connection";
 
 // This is main layout body component
 export default function Body() {
@@ -16,8 +17,15 @@ export default function Body() {
       {/* Trust Badges Section */}
       <TrustBadges />
 
-      {/* Scroll Arrow */}
+      {/* Scroll Arrow Section */}
       <ScrollArrow />
+
+      {/* Connection Section */}
+      <Connection />
+
+      {/* Scroll Arrow Section */}
+      <ScrollArrow />
+
     </>
   );
 }
