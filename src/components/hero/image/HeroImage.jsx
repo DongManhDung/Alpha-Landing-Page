@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NutritionModal from "./NutritionModal";
 
 export default function HeroImage() {
   const images = [
@@ -9,6 +10,8 @@ export default function HeroImage() {
     "https://trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard6.jpg?v=1760103685",
     "https://trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard8.jpg?v=1760103685",
   ];
+
+  const [openNutrition, setOpenNutrition] = useState(false);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -118,6 +121,7 @@ export default function HeroImage() {
         {/* Nutrition button */}
         {currentImageIndex === 0 && (
           <button
+            onClick={() => setOpenNutrition(true)}
             className="
             absolute bottom-4 left-1/2 -translate-x-1/2 z-10
             rounded-full bg-white px-4 py-1.5
@@ -154,7 +158,6 @@ export default function HeroImage() {
                 }
               `}
             >
-            
               <img
                 src={image}
                 alt={`Thumbnail ${index + 1}`}
@@ -173,7 +176,10 @@ export default function HeroImage() {
           <div className="bg-gray-100 rounded-2xl p-8 text-center border-gray-300 border-2">
             <div className="relative w-32 h-32 mx-auto mb-6">
               {/* Progress Circle */}
-              <svg className="w-32 h-32 transform -rotate-90" viewBox="0 0 120 120">
+              <svg
+                className="w-32 h-32 transform -rotate-90"
+                viewBox="0 0 120 120"
+              >
                 {/* Background circle */}
                 <circle
                   cx="60"
@@ -214,7 +220,10 @@ export default function HeroImage() {
           <div className="bg-gray-100 rounded-2xl p-8 text-center border-gray-300 border-2">
             <div className="relative w-32 h-32 mx-auto mb-6">
               {/* Progress Circle */}
-              <svg className="w-32 h-32 transform -rotate-90" viewBox="0 0 120 120">
+              <svg
+                className="w-32 h-32 transform -rotate-90"
+                viewBox="0 0 120 120"
+              >
                 {/* Background circle */}
                 <circle
                   cx="60"
@@ -244,13 +253,10 @@ export default function HeroImage() {
               </div>
             </div>
             <h3 className="text-lg font-medium text-gray-900 mb-4 leading-snug">
-              reported less puffiness
-              and firmer skin in the first
-              4 weeks*
+              reported less puffiness and firmer skin in the first 4 weeks*
             </h3>
             <p className="text-sm text-gray-500">
-              *Based on a four-week independent
-              customer panel
+              *Based on a four-week independent customer panel
             </p>
           </div>
         </div>
@@ -282,6 +288,12 @@ export default function HeroImage() {
           ))}
         </div>
       </div>
+
+      {/* Nutrition Modal */}
+      <NutritionModal
+        open={openNutrition}
+        onClose={() => setOpenNutrition(false)}
+      />
     </div>
   );
 }
