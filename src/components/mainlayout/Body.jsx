@@ -10,6 +10,7 @@ import Features from "../features/Features";
 import DoctorEndorsement from "../doctorendorsement/DoctorEndorsement";
 import UGCSection from "../ugc/UGCSection";
 import FAQSection from "../faq/FAQSection";
+import FinalCTASection from "../finalcta/FinalCTA";
 
 // This is main layout body component
 export default function Body() {
@@ -55,6 +56,9 @@ export default function Body() {
 
       {/* FAQ Section */}
       <FAQSection />
+
+      {/* Final CTA Section */}
+      <FinalCTASection />
 
     </>
   );
