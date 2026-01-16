@@ -8,6 +8,7 @@ import WhyNotThis from "../whynotthis/WhyNotThis";
 import Ingredient from "../ingredient/Ingredient";
 import Features from "../features/Features";
 import DoctorEndorsement from "../doctorendorsement/DoctorEndorsement";
+import UGCSection from "../ugc/UGCSection";
 
 // This is main layout body component
 export default function Body() {
@@ -47,6 +48,9 @@ export default function Body() {
 
       {/* Doctor Endorsement Section */}
       <DoctorEndorsement />
+
+      {/* UGC Section */}
+      <UGCSection />
 
     </>
   );
