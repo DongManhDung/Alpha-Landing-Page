@@ -6,7 +6,11 @@ import Connection from "../benefits/Connection";
 import Comparison from "../comparison/Comparison";
 import WhyNotThis from "../whynotthis/WhyNotThis";
 import Ingredient from "../ingredient/Ingredient";
+
+// Feedback Section
 import FeedbackHeader from "../feedbacks/FeedbackHeader";
+import FeedbackList from "../feedbacks/FeedbackList";
+
 import Features from "../features/Features";
 import DoctorEndorsement from "../doctorendorsement/DoctorEndorsement";
 import UGCSection from "../ugc/UGCSection";
@@ -47,7 +51,8 @@ export default function Body() {
       {/* Feedback Header Section */}
       <FeedbackHeader />
 
-
+      {/* Feedback List Section */}
+      <FeedbackList />
 
       {/* Features Section */}
       <Features />
